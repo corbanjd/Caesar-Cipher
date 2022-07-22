@@ -9,7 +9,7 @@ def caesar_cipher(string, shift)
                 if shift.positive?
                     ascii+shift>90? (ascii+shift)-26 : ascii+shift
                 else
-                    ascii+shift <64 ? (ascii+shift)+26: ascii+shift_factor
+                    ascii+shift <64 ? (ascii+shift)+26: ascii+shift
                 end
             elsif ascii.between?(97,122)
                 if shift.positive?
